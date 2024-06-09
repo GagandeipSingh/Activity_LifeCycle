@@ -2,6 +2,7 @@ package com.example.activity_lifecycle
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -10,7 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class SecondActivity : AppCompatActivity() {
-    private lateinit var text2:TextView
+    private lateinit var move2:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,8 +22,8 @@ class SecondActivity : AppCompatActivity() {
             insets
         }
         Toast.makeText(this,"onCreate2", Toast.LENGTH_SHORT).show()
-        text2 = findViewById(R.id.text2)
-        text2.setOnClickListener {
+        move2 = findViewById(R.id.move2)
+        move2.setOnClickListener {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
