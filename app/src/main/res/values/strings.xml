@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Activity_LifeCycle</string>
+    <string name="firstactivity">First Activity</string>
+    <string name="move1">Move to 2nd</string>
+    <string name="secondactivity">Second Activity</string>
+    <string name="move2">Move to 1st</string>
+</resources>
